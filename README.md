@@ -1,8 +1,7 @@
-## Final Project
 
-Project Title = Recommendation using Map-Reduce
-
-Team Members = Rakshith Muniraju , J V P S Avinash
-
-CWID = A20344305, A20344397
 # Movie-Recommendations-using-Map-Reduce
+Recommendation systems are quite popular among movie sites, and other social network systems these days. We need the user-data interaction details like items, movies watched and rating given and are available from various sites. To find the similarity between two pair of items, we need to find the correlation between them. Since the correlation data would be sparse and time-varying, we need the calculations to be done periodically so that the results are up to date. Moreover, the framework needs to handle a lots and lots of data. So, we need to have a divide-and-conquer pattern, to handle this scenario. We use Map-Reduce as a possible solution.
+
+
+MapReduce is the framework useful for large scale distributed computations across various domains. It can handle petabytes of data.
+mrjob is a Python package useful for running Hadoop Streaming jobs. With this, we can test our code locally without installing Hadoop. We calculate how similar pairs of movies are, so we can know how likely person will watch that movie based on the recommendation. For every pair of movies A and B, we take the ratings given to both the movies and form vectors for both of them. Next, we find the similarity using following methods : Correlation, Cosine, Regularized Correlation and Jaccard Similarity measures. When someone watches a movie, you can now recommend him the movies most correlated with it.
