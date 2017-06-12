@@ -1,0 +1,16 @@
+INSTRUCTIONS TO RUN THE CODE
+
+1) The Data_Generation.ipynb contains the code to extract the data from Rotten Tomatoes
+	
+	Execute Data_Generation.ipynb
+
+2) Similarity_Metrics.py contains all the methods to handle the similarity measures.
+
+	Execute Similarity_Metrics.py
+
+3) The Project.ipynb contains the code for the algorithm to find the movie recommendations. The Similarity Measures Python file should be executed first since the Main Project File implements this python file.
+
+	Execute Project.ipynb
+
+4) The samp.csv contains the sample data which contains the user-movie-ratings.
+
